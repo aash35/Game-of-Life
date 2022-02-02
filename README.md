@@ -25,8 +25,8 @@ Examples shown at the bottom.
 
 **These arguments are**
 
-Rows and Columns: "--dimensions <rows> <columns>" 
-----------	
+-- **Rows and Columns:** `--dimensions <rows> <columns>`
+	
 Rules: Where <row> and <column> are numbers between 4 and 48 (inclusive)
 Effect: Changes the dimensions of the universe
 Default: 16x16
