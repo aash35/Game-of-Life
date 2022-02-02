@@ -22,8 +22,8 @@ This game is a recreation of **John Conway's** Famous Game of Life. The principl
 The program of "Life" can be called from the CLI with several different parameters
 1) Open your chosen CLI (e.g. cmd, PowerShell, terminal) 
 2) Navigate to the location of "life.dll" as shown in the above build section (note without the "life.dll" at the end)
-3) type "dotnet life.dll" (will run the file with default settings)
-4) to run the program with different settings several different parameters can be passed after the "dotnet life.dll"
+3) Type "dotnet life.dll" (will run the file with default settings)
+4) To run the program with different settings several different parameters can be passed after the "dotnet life.dll"
 Examples are shown at the bottom.
 
 **These arguments are**
