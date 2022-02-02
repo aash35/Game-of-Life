@@ -2,29 +2,29 @@
 
 CAB201 - Programming Principles
 
-### Technologies
+### Language/Frameworks
 - C#
 
-This game is a recreation of **John Conway's** Famous Game of Life. The principles remain the same with the state of each cell being determined by neighbouring cells. The settings can be changed (see below) for many different game states. There is also a number of preconfigured 'seeds' were the intial state of the game is varied for special outcomes.
+This game is a recreation of **John Conway's** Famous Game of Life. The principles remain the same with the state of each cell being determined by neighbouring cells. The settings can be changed (see below) for many different game states. There is also some pre-configured 'seeds' where the initial state of the game is varied for special outcomes.
 
 ## Build Instructions
 
 1) Open the "Life" folder
 2) Open the "Life.sln" file
-3) Ensure that at the top underneath the "Debug" drop down menu that it say "Release". 
-   If not click the drop down and change from "Debug" to "Release.
+3) Ensure that at the top underneath the "Debug" drop-down menu that it says "Release". 
+   If not click the drop-down and change from "Debug" to "Release.
 4) On the right hand side in the "Solution Explorer" right click "Solution 'Life' (2 of 2 projects)"
 5) Click "Build Solution" (or Ctrl+Shift+B)
 6) Note the location of the build in the bottom panel (e.g. "C:\CAB201_2020S2_ProjectPartA_n10624937\Life\Life\bin\Release\netcoreapp3.1\life.dll") 
 
 ## Usage 
 
-The program of "Life" can be called from the CLI with a number of different parameters
-1) Open your chosen CLI (e.g. cmd, powershell, terminal) 
+The program of "Life" can be called from the CLI with several different parameters
+1) Open your chosen CLI (e.g. cmd, PowerShell, terminal) 
 2) Navigate to the location of "life.dll" as shown in the above build section (note without the "life.dll" at the end)
 3) type "dotnet life.dll" (will run the file with default settings)
-4) to run the program with different settings there are a number of different parameters that can be passed after the "dotnet life.dll"
-Examples shown at the bottom.
+4) to run the program with different settings several different parameters can be passed after the "dotnet life.dll"
+Examples are shown at the bottom.
 
 **These arguments are**
 -------------
@@ -37,7 +37,7 @@ Default: 16x16
 ### Periodic Behaviour: `--periodic`
 	
 Rules: There are no extra values for periodic (the next parameter, if there is one, must start with "--")  
-Effect: Allows the universe to act in as if the borders wrapped around to the other side  
+Effect: Allows the universe to act as if the borders wrapped around to the other side  
 Default: Off  
 
 ### Random Factor: `--random <probability>`
@@ -67,7 +67,7 @@ Default: 5
 ### Step Mode: `--step`
 
 Rules: There are no extra values for step (the next parameter, if there is one, must start with "--")  
-Effect: To render each new generation the user must press spacebar  
+Effect: To render each new generation the user must press the spacebar  
 Default: Off  
 
 ### Neighbourhood: `--neighbour <type> <order> <centre-count>`
@@ -75,24 +75,24 @@ Default: Off
 Rules: Where <type> is either "moore" or "vonneumann" (case insenitive) 
        Where <order> is an integer between 1 and 10 (inclusive)
        Where <centre-count> is true or false  
-Effect: Changes how each cells neighbouring alive cells are calculated   
+Effect: Changes how each cell neighbouring alive cells are calculated   
 Default: Moore 1 false  
 
 ### Survival and Birth:  `--survival <param1> <param2> <param3> ..." and "--birth <param1> <param2> <param3> ...`
 
-Rules: Where each <parameter> is either an single positive integer or two positive integers seperated by "..."  
+Rules: Where each <parameter> is either a single positive integer or two positive integers separated by "..."  
 Effect: Changes how many alive cells are needed for a cell to be "born" or "survive" respectively  
 Default: Survival is 2 or 3 and Birth is 3  
 
 ### Generational Memory: `--memory <number>`
 
-Rules: Where <number> is a integer between 4 and 512 (inclusive)  
-Effect: Changes how many generations of the universe are stored to detect a steady state  
+Rules: Where <number> is an integer between 4 and 512 (inclusive)  
+Effect: Changes how many generations of the universe are stored to detect a steady-state  
 Default: 16  
 
 ### Output File:  `--output <filename>`
 
-Rules: Where <filename> is a existing path with the output file itself having the .seed extension  
+Rules: Where <filename> is an existing path with the output file itself having the .seed extension  
 Effect: Changes where the output file is stored and what it is called.  
 Default: "N/A"  
 
@@ -120,6 +120,6 @@ If any of the arguments are not put in properly the defaults will be used.
 1. The program uses spacebar for progressing throughout
 2. When step mode is used the program will ignore the max update rate when will progress through 
    the generations with spacebar
-3. When input file is used the program will ignore the random setting
+3. When the input file is used the program will ignore the random setting
 4. The program will stop early if a steady state is detected
 
