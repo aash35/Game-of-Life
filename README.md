@@ -1,10 +1,10 @@
----
-title: Life
-author: Adrian Ash - n10624937
-date: 25/10/2020
----
+## Programming Principles - C#
 
-## Build Instructions
+CAB201 - Programming Principles
+
+This game is a recreation of **John Conway's** Famous Game of Life. The principles remain the same with the state of each cell being determined by neighbouring cells. The settings can be changed (see below) for many different game states. There is also a number of preconfigured 'seeds' were the intial state of the game is varied for special outcomes.
+
+### Build Instructions
 
 1) Open the "Life" folder
 2) Open the "Life.sln" file
@@ -14,7 +14,7 @@ date: 25/10/2020
 5) Click "Build Solution" (or Ctrl+Shift+B)
 6) Note the location of the build in the bottom panel (e.g. "C:\CAB201_2020S2_ProjectPartA_n10624937\Life\Life\bin\Release\netcoreapp3.1\life.dll") 
 
-## Usage 
+### Usage 
 
 The program of "Life" can be called from the CLI with a number of different parameters
 1) Open your chosen CLI (e.g. cmd, powershell, terminal) 
@@ -23,7 +23,7 @@ The program of "Life" can be called from the CLI with a number of different para
 4) to run the program with different settings there are a number of different parameters that can be passed after the "dotnet life.dll"
 Examples shown at the bottom.
 
-These arguments are
+**These arguments are**
 
 Rows and Columns: "--dimensions <rows> <columns>" 
 ----------	
@@ -101,21 +101,19 @@ Default: Off
 
 
 
-
 Some Examples of arguments in use are
 "dotnet life.dll --step"
 "dotnet life.dll --step --periodic"
 "dotnet life.dll --dimensions 8 8"
 "dotnet life.dll --dimensions 32 32 --seed path/to/seed --max-update 12"
 "dotnet life.dll --neighbour vonneumann 8 true --dimensions 16 4 --step --ghost --random 0.8 --generations 12 
-	--max-update 10 --seed C:\Users\User\Desktop\LifePart2\Seeds\target_16x16.seed --output ..\Output\output.seed"
+	--max-update 10 --seed Seeds\target_16x16.seed --output ..\Output\output.seed"
 "dotnet life.dll --survival 9...8 --birth 8 6 9...12 --neighbour vonneumann 2 true 
-	--seed C:\Users\User\Desktop\LifePart2\Seeds\target2_16x16.seed --dimensions 48 48 --step"
+	--seed Seeds\target2_16x16.seed --dimensions 48 48 --step"
 
 If any of the arguments are not put in properly the defaults will be used.
 
 ## Notes 
-
 1. The program uses spacebar for progressing throughout
 2. When step mode is used the program will ignore the max update rate when will progress through 
    the generations with spacebar
