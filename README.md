@@ -2,6 +2,9 @@
 
 CAB201 - Programming Principles
 
+### Technologies
+- C#
+
 This game is a recreation of **John Conway's** Famous Game of Life. The principles remain the same with the state of each cell being determined by neighbouring cells. The settings can be changed (see below) for many different game states. There is also a number of preconfigured 'seeds' were the intial state of the game is varied for special outcomes.
 
 ## Build Instructions
