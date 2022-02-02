@@ -24,7 +24,7 @@ The program of "Life" can be called from the CLI with a number of different para
 Examples shown at the bottom.
 
 **These arguments are**
-
+-------------
 ### Rows and Columns: `--dimensions <rows> <columns>`
 	
 Rules: Where <row> and <column> are numbers between 4 and 48 (inclusive)  
@@ -37,37 +37,37 @@ Rules: There are no extra values for periodic (the next parameter, if there is o
 Effect: Allows the universe to act in as if the borders wrapped around to the other side  
 Default: Off  
 
-Random Factor: "--random <probability>"
--------------
+### Random Factor: `--random <probability>`
+
 Rules: Where <probability> is between 0 and 1 (inclusive)
 Effect: When a seed is not given each cell will have this probability of being alive
 Default: 50%
 
-Input File: "--seed <filename>"
+### Input File: "--seed <filename>"
 ----------
 Rules: Where <filename> must be a valid path to a file with the ".seed" extension
 Effect: Sets the alive or dead cells in a universe based on the seed files row and column location
 Default: N/A
 
-Generations: "--generations <number>"
+### Generations: "--generations <number>"
 -----------
 Rules: Where <number> is a positive non-zero integer
 Effect: Changes how many generations the universe will go through before ending 
 Default: 50
 
-Maximum Update Rate: "--max-update <ups>"
+### Maximum Update Rate: "--max-update <ups>"
 --------------------
 Rules: Where <ups> is between 1 and 30 (inclusive)
 Effect: Changes how quickly each generation is rendered
 Default: 5
 
-Step Mode: "--step"
+### Step Mode: "--step"
 ---------
 Rules: There are no extra values for step (the next parameter, if there is one, must start with "--")
 Effect: To render each new generation the user must press spacebar
 Default: Off
 
-Neighbourhood: "--neighbour <type> <order> <centre-count>"
+### Neighbourhood: "--neighbour <type> <order> <centre-count>"
 -----------
 Rules: Where <type> is either "moore" or "vonneumann" (case insenitive) 
        Where <order> is an integer between 1 and 10 (inclusive)
@@ -75,25 +75,25 @@ Rules: Where <type> is either "moore" or "vonneumann" (case insenitive)
 Effect: Changes how each cells neighbouring alive cells are calculated 
 Default: Moore 1 false
 
-Survival and Birth:  "--survival <param1> <param2> <param3> ..." and "--birth <param1> <param2> <param3> ..."
+### Survival and Birth:  "--survival <param1> <param2> <param3> ..." and "--birth <param1> <param2> <param3> ..."
 --------------------
 Rules: Where each <parameter> is either an single positive integer or two positive integers seperated by "..." 
 Effect: Changes how many alive cells are needed for a cell to be "born" or "survive" respectively 
 Default: Survival is 2 or 3 and Birth is 3
 
-Generational Memory: "--memory <number>"
+### Generational Memory: "--memory <number>"
 ---------
 Rules: Where <number> is a integer between 4 and 512 (inclusive)
 Effect: Changes how many generations of the universe are stored to detect a steady state
 Default: 16
 
-Output File:  "--output <filename>"
+### Output File:  "--output <filename>"
 --------------------
 Rules: Where <filename> is a existing path with the output file itself having the .seed extension
 Effect: Changes where the output file is stored and what it is called.
 Default: "N/A"
 
-Ghost Mode: "--ghost"
+### Ghost Mode: "--ghost"
 ---------
 Rules: There are no extra values for ghost (the next parameter, if there is one, must start with "--")
 Effect: Changes the grid rendering to show the previous three generations in degrading form
@@ -101,7 +101,7 @@ Default: Off
 
 
 
-Some Examples of arguments in use are
+**Some Examples of arguments in use are**
 "dotnet life.dll --step"
 "dotnet life.dll --step --periodic"
 "dotnet life.dll --dimensions 8 8"
