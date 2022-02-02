@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Life": {
+      "commandName": "Project",
+      "commandLineArgs": "--ghost --survival 12...20 --birth 7 8 --neighbour vonNeumann 4 true --seed Seeds/kaleidoscope2_47x47.seed --dimensions 47 47 --generations 400 --max-update 30"
+    }
+  }
+}
