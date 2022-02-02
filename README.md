@@ -1,10 +1,10 @@
-## Programming Principles - C#
+# Programming Principles - C#
 
 CAB201 - Programming Principles
 
 This game is a recreation of **John Conway's** Famous Game of Life. The principles remain the same with the state of each cell being determined by neighbouring cells. The settings can be changed (see below) for many different game states. There is also a number of preconfigured 'seeds' were the intial state of the game is varied for special outcomes.
 
-### Build Instructions
+## Build Instructions
 
 1) Open the "Life" folder
 2) Open the "Life.sln" file
@@ -14,7 +14,7 @@ This game is a recreation of **John Conway's** Famous Game of Life. The principl
 5) Click "Build Solution" (or Ctrl+Shift+B)
 6) Note the location of the build in the bottom panel (e.g. "C:\CAB201_2020S2_ProjectPartA_n10624937\Life\Life\bin\Release\netcoreapp3.1\life.dll") 
 
-### Usage 
+## Usage 
 
 The program of "Life" can be called from the CLI with a number of different parameters
 1) Open your chosen CLI (e.g. cmd, powershell, terminal) 
@@ -25,7 +25,7 @@ Examples shown at the bottom.
 
 **These arguments are**
 
-- **Rows and Columns:** `--dimensions <rows> <columns>`
+###Rows and Columns: `--dimensions <rows> <columns>`
 	
 Rules: Where <row> and <column> are numbers between 4 and 48 (inclusive)  
 Effect: Changes the dimensions of the universe  
