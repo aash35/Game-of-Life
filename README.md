@@ -31,11 +31,11 @@ Rules: Where <row> and <column> are numbers between 4 and 48 (inclusive)
 Effect: Changes the dimensions of the universe  
 Default: 16x16  
 	
-- **Periodic Behaviour:** `--periodic`
+### Periodic Behaviour: `--periodic`
 	
-Rules: There are no extra values for periodic (the next parameter, if there is one, must start with "--")
-Effect: Allows the universe to act in as if the borders wrapped around to the other side
-Default: Off
+Rules: There are no extra values for periodic (the next parameter, if there is one, must start with "--")  
+Effect: Allows the universe to act in as if the borders wrapped around to the other side  
+Default: Off  
 
 Random Factor: "--random <probability>"
 -------------
